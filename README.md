@@ -7,24 +7,24 @@ Welcome to the Interactive Urban Analytics Dashboard repository! This project wa
 
 **Team Members**
 
-Palak Bhalodi
-Jahnvi Shah
-Siddhant Sorann
-Krutik Parmar
-Rahil Patel
-Arush Patel
+1. Palak Bhalodi
+2. Jahnvi Shah
+3. Siddhant Sorann
+4. Krutik Parmar
+5. Rahil Patel
+6. Arush Patel
 
 **Project Description**
 
 Our urban analytics visualization system leverages principles of the Nested Model to create an interactive dashboard that ties together multiple statistical graphics. These include stacked bars, bubble plots, networks, time series lines, pie charts, and choropleth maps. The goal is to enable exploratory analysis along three key dimensions: demographics, social patterns, and business distribution.
 
 **Key Features**
-**Demographic Analysis: ** Visualize participant distribution by age and education levels, showcasing trends like average joviality.
-**Household Size Distribution:** Compare education levels and household sizes, highlighting trends in average household sizes.
-**Social Network Visualization:** Display social interactions among participants, with demographic segregation options.
-**Temporal Social Activity:** Analyze social activity intensity over time with demographic filters.
-**Business Distribution:** Visualize the distribution of different businesses and identify predominant business categories.
-**Geographic Analysis:** Map the geographic distribution of businesses across the town.
+1. **Demographic Analysis:** Visualize participant distribution by age and education levels, showcasing trends like average joviality.
+2. **Household Size Distribution:** Compare education levels and household sizes, highlighting trends in average household sizes.
+3. **Social Network Visualization:** Display social interactions among participants, with demographic segregation options.
+4. **Temporal Social Activity:** Analyze social activity intensity over time with demographic filters.
+5. **Business Distribution:** Visualize the distribution of different businesses and identify predominant business categories.
+6. **Geographic Analysis:** Map the geographic distribution of businesses across the town.
 
 **Visualization Design**
 
@@ -63,16 +63,16 @@ Uses color shading to represent different business types.
 
 The dataset comprises three types of logs:
 
-Activity Logs: Record location, status, and activities of participants every 5 minutes over a 15-month period.
-Attribute Logs: Provide details about entities in the city like apartments, jobs, restaurants, schools, and participants.
-Journal Logs: Document specific activities like check-ins, financial transactions, social activities, and travel.
+- Activity Logs: Record location, status, and activities of participants every 5 minutes over a 15-month period.
+- Attribute Logs: Provide details about entities in the city like apartments, jobs, restaurants, schools, and participants.
+- Journal Logs: Document specific activities like check-ins, financial transactions, social activities, and travel.
 
 **System Interactions**
 
-Filtering: Use UI filters to slice data by attributes like age group and education level.
-Hover Details: Informative tooltips provide details-on-demand by hovering over data points.
-Brushing and Linking: Selecting any data component cross highlights and filters relevant subsets in associated visualizations.
-Interactivity: Dynamic updates and selections facilitate an intuitive exploration and analysis experience.
+  1. Filtering: Use UI filters to slice data by attributes like age group and education level.
+  2. Hover Details: Informative tooltips provide details-on-demand by hovering over data points.
+  3. Brushing and Linking: Selecting any data component cross highlights and filters relevant subsets in associated visualizations.
+  4. Interactivity: Dynamic updates and selections facilitate an intuitive exploration and analysis experience.
 
 
 **Installation**
@@ -95,7 +95,8 @@ Run the application:
 sh
 Copy code
 python app.py
-Usage
+
+**Usage**
 
 Once the application is running, open your browser and navigate to http://localhost:5000. You can interact with the various visualizations, apply filters, and explore the urban data.
 
