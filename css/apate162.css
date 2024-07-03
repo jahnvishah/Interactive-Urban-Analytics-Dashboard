@@ -1,0 +1,49 @@
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .legend-label {
+    font-size: 0.9em;
+  }
+  .svgdiv {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    /* border: 1px solid rgb(0, 0, 0); */
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 3px 3px 5px rgb(0, 0, 0); */
+  }
+  .svgdiv {
+    width: 1440;
+    height: 600px;
+  }
+  .myContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* background-color: #222; Dark background color for the container */
+  }
+
+  .myContainer {
+    justify-content: left;
+    width: 1000px;
+  }
+
+  .graph-title {
+    background-color: white; /* Dark background color */
+    color: black; /* Text color */
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+    width: 1440px
+  }

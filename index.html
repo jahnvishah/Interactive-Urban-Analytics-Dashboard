@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Project: CSE 578 - Fall 2023</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="./css/ssorann.css" />
+    <link rel="stylesheet" href="./css/rvpatel6.css" />
+
+</head>
+
+<body>
+    <div>
+        <div id="tooltip" class="tooltip" style="opacity: 0;"></div>
+        <div class="row" style="padding-top: 250px;">
+            <div class="filters-area">
+                <div id="headingToHide" class="row text-center">
+                    <h1>VAST Challenge 2022 MC-1</h1>
+                    <h2>Demographics and Relationships in Engagement Ohio</h1>
+                </div>
+                <div class="filters-container" id="ageGroupContainer">
+                    <label>Select Age Groups:</label>
+                </div>
+                <div class="filters-container">
+                    <label>Select Education Levels:</label>
+                    <div>
+                        <input type="checkbox" id="low" name="educationLevel" value="Low" checked>
+                        <label for="low">Low</label>
+                        <input type="checkbox" id="highSchoolOrCollege" name="educationLevel"
+                            value="HighSchoolOrCollege" checked>
+                        <label for="highSchoolOrCollege">High School or College</label>
+                        <input type="checkbox" id="bachelors" name="educationLevel" value="Bachelors" checked>
+                        <label for="bachelors">Bachelor's Degree</label>
+                        <input type="checkbox" id="graduate" name="educationLevel" value="Graduate" checked>
+                        <label for="graduate">Graduate</label>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 10px;">
+                    <button class="btn btn-primary btn-sm" id="demographic" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Demographic Data</button>
+                    <button class="btn btn-primary btn-sm" id="social" onclick="window.scrollTo({ top: 850, behavior: 'smooth' });">Social Network</button>
+                    <button class="btn btn-primary btn-sm" id="business" onclick="window.scrollTo({ top: 2450, behavior: 'smooth' });">Business Data</button>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center" style="margin-bottom: 10px;">
+            <h3>Demographic Data</h1>
+        </div>
+        <div class="row">
+            <div id="chart2" style="font-size: 12px;"></div>
+            <div class="col-md-6 text-center">
+                <h3>Stacked Bar Chart</h1>
+                <iframe id="ssorann" src="ssorann.html" width="100%" height="600px"
+                    style="padding-left: 20px;"></iframe>
+            </div>
+            <div class="col-md-6 text-center">
+                <h3>Bubble Plot</h1>
+                <iframe id="jshah" src="jshah.html" width="100%" height="600px"></iframe>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div id="control-panel-container">
+                <div id="control-panel">
+                    <h2 id="control-panel-container2">Social Network</h2>
+                    <label for="date-slider"><b>Date:</b></label>
+                    <input type="date" id="graph_date" name="social-start" value="2022-03-02" min="2022-03-01"
+                        max="2022-03-31" onchange="dateChanged()" />
+                        &nbsp;&nbsp;
+                        <label>
+                            <input type="radio" id="age_group" name='classification'
+                                onchange="onClassificationSelectionChange()" checked>
+                            Age Group
+                        </label>
+                        <label>
+                            <input type="radio" id="education_level" name='classification'
+                                onchange="onClassificationSelectionChange()">
+                            Education Level
+                        </label>
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <iframe id="rvpatel6" src="rvpatel6.html" width="100%" height="2600px"></iframe>
+        </div>
+</body>
+
+</html>

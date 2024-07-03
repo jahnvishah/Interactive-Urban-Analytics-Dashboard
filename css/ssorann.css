@@ -1,0 +1,76 @@
+.tooltip {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #0a0a0a;
+    border-radius: 5px;
+    padding: 4px;
+    opacity: 0;
+    pointer-events: none;
+}
+.btn:focus,
+.btn:active {
+    outline: none;
+    border: none;
+}
+
+.btn.active {
+    background-color: green;
+    /* color: black; */
+}
+
+.filters-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000; /* Ensure it's above other elements */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+
+#headingToHide {
+    transition: opacity 0s ease-in-out; /* CSS transition for smooth effect */
+}
+
+/* Hidden state */
+#headingToHide.hidden {
+    opacity: 0; /* Make the element transparent */
+    pointer-events: none; /* Disable pointer events to avoid interaction when hidden */
+    height: 0; /* Optionally set height to 0 to avoid space */
+    padding: 0; /* Optionally set padding to 0 to avoid space */
+}
+
+/* Add some padding or margin to create space between the fixed filters area and the content */
+/* You may adjust these values according to your layout */
+.content {
+    padding-top: 80px; /* Adjust this value to match the height of the fixed filters area */
+}
+
+/* .tooltip {
+    position: absolute;
+    text-align: center;
+    width: 125px;
+    height: 80px;
+    padding: 5px;
+    font: 12px sans-serif;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 4px;
+    pointer-events: none;
+} */
+
+.filters-area {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.filters-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.filters-container label {
+    margin-right: 10px;
+}

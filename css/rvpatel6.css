@@ -1,0 +1,127 @@
+/* .svgdiv{
+    display: flex;
+    width: 800px;
+    height: 800px;
+    justify-content: center;
+    border: 1px solid rgb(0, 0, 0); 
+    border-radius: 5px;   
+    background-color: #f8f8f8;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0); 
+  }
+
+  .svgdivtime{
+    display: flex;
+    width: 600px;
+    height: 800px;
+    justify-content: center;
+    border: 1px solid rgb(0, 0, 0); 
+    border-radius: 5px;   
+    background-color: #f8f8f8;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0); 
+  } */
+  
+  svg {
+    /* width: 800px; */
+    justify-content: center;
+    /* height: 800px; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+  }
+
+  .mySvgContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* background-color: #222; Dark background color for the container */
+
+  }
+  
+  .svgdiv,
+  .svgdivtime {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    /* border: 1px solid rgb(0, 0, 0); */
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 3px 3px 5px rgb(0, 0, 0); */
+  }
+  .svgdiv {
+    width: 1000px;
+    height: 800px;
+  }
+  
+  .svgdivtime {
+    width: 1440px;
+    height: 650px;
+  }
+  
+  svg {
+    width: 100%;
+    height: 100%;
+  } 
+
+  .myContainer {
+    margin: 10px auto;
+    justify-content: center;
+    width: 1400px;
+  }
+  
+  .tooltip {
+    position: absolute;
+    text-align: center;
+    width: fit-content;
+    height: fit-content ;
+    padding: 4px;
+    font: 15px sans-serif;
+    background: white;
+    border: 3px solid black;;
+    border-radius: 8px;
+    /* border-color: black; */
+    pointer-events: none;
+    line-height: 100%;
+  }
+  
+  #control-panel-container {
+      /* border: 1px solid rgb(0, 0, 0);  */
+      /* border-radius: 5px;    */
+      /* padding: 15px;         */
+      /* margin: 15px;          */
+      /* background-color: rgb(255, 255, 255); */
+      /* box-shadow: 3px 3px 5px rgb(0, 0, 0);  */
+      /* color: black */
+  }
+
+  #control-panel-container2 {
+    /* border: 1px solid rgba(78, 78, 78, 0.112); 
+    border-radius: 5px;    */
+    /* padding: 15px;         */
+    /* margin: 15px;          */
+    background-color: white;
+    /* box-shadow: 3px 3px 5px rgb(0, 0, 0);  */
+    /* color: black */
+}
+  
+  #control-panel label, #control-panel select, #control-panel input, #control-panel button {
+      /* margin: 5px 0; */
+  }
+  
+  /* 
+    circle {
+      stroke: blue;
+      stroke-width: 1;
+    } */
+  
+    path {
+      fill: #fff;
+      stroke: #000;
+    }
+
+    .graph-title {
+        background-color: white; /* Dark background color */
+        color: balck; /* Text color */
+        padding: 10px; /* Adjust padding as needed */
+        border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+        width: 1440px
+      }
