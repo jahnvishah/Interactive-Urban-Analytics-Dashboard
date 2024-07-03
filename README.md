@@ -5,6 +5,8 @@
 
 Welcome to the Interactive Urban Analytics Dashboard repository! This project was developed as part of the VAST Challenge 2022, focusing on creating a comprehensive urban analytics visualization system. Our dashboard integrates various statistical graphics and interactive visualizations to provide deep insights into urban data, aiding participatory planning exercises.
 
+![Dashboard Overview](Overview.png)
+
 **Team Members**
 
 1. Palak Bhalodi
